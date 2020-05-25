@@ -63,6 +63,10 @@ nav .top-bar {
   padding-top: 1rem;
 }
 
+nav .top-bar .container {
+  margin-top: 10px;
+}
+
 nav .top-bar .container ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,6 +171,7 @@ header {
 }
 
 header .container {
+  padding-top: 2em;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

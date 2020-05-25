@@ -5,22 +5,6 @@ $color-primary: #f04336;
   max-width: 90%;
   margin: 0 auto;
 }
-.store{
-    position: fixed;
-    right: 0;
-    top: 50%;
-    color: white;
-    background-color: $color-primary;
-    border-color: #ffffff;
-    padding: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: "Nunito", sans-serif;
-    border: 1px solid transparent;
-    overflow: hidden;
-    border-radius: 4px;
-    z-index: 999999999999;
-}
 .active {
   background-color: white !important;
   border-bottom: solid 0.5px #adadad;

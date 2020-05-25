@@ -7,6 +7,9 @@
 
 .active {
   background-color: white !important;
+}
+
+.active ul li a {
   color: #8f9093 !important;
 }
 

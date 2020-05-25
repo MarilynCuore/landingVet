@@ -7,10 +7,11 @@
 
 .active {
   background-color: white !important;
+  border-bottom: solid 0.5px #adadad;
 }
 
 .active ul li a {
-  color: #8f9093 !important;
+  color: #adadad !important;
 }
 
 nav {

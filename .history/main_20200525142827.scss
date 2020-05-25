@@ -16,7 +16,7 @@ nav {
   padding-top: 1rem;
   padding-bottom: 1rem;
   .top-bar {
-    background-color: rgba(white, 0.3);
+    background-color: rgba(white, 0.5);
     position: fixed;
     top: 0;
     width: 100%;
@@ -56,11 +56,11 @@ nav {
         &:nth-of-type(2) {
           display: flex;
           align-self: center;
-          justify-content: flex-end;
+          justify-content: center;
           li {
             padding-right: 3rem;
-            &:last-child {
-              padding-right: none !important;
+            &:last-of-type() {
+              padding-right: none;
             }
           }
         }
@@ -148,7 +148,7 @@ header {
 }
 section {
   &:nth-of-type(1) {
-    padding-bottom: 3.5rem;
+    padding-bottom: 3rem;
     .container {
       .title {
         h2 {
@@ -194,61 +194,8 @@ section {
           place-items: center;
           text-align: center;
           color: white;
-          transition: 0.3s;
+          transition: 0.5s;
           border-radius: 6px;
-          display: flex;
-          align-items: flex-end;
-          .title {
-            margin-bottom: 2em;
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            position: relative;
-            cursor: pointer;
-            &:hover {
-              strong {
-                top: -35px;
-                opacity: 1;
-                color: black;
-                border-radius: 0;
-                transform: scale(1);
-              }
-            }
-            strong {
-              transition: all 0.5s ease;
-              overflow: hidden;
-              opacity: 1;
-              display: block;
-              position: absolute;
-              top: 5px;
-              z-index: 0;
-              transform: scale(0);
-              padding: 5px 10px;
-              background: white;
-              color: white;
-              font-family: "Nunito", sans-serif;
-              a {
-                color: $color-primary;
-                text-decoration: none;
-                cursor: pointer;
-              }
-            }
-            span {
-              z-index: 1;
-              background: white;
-              padding: 5px 15px;
-              color: $color-primary;
-              font-size: 18px;
-              clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
-              font-family: "Nunito", sans-serif;
-              font-size: 1.3rem;
-              font-weight: bold;
-              &:hover {
-                background: $color-primary;
-                color: white;
-              }
-            }
-          }
           &:nth-child(1) {
             grid-column: span 2;
             grid-row: span 4;
@@ -277,108 +224,15 @@ section {
     .one {
       width: 50%;
       background-color: #ededed;
-      .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        h3 {
-          color: #424242;
-          font-family: "Nunito", sans-serif;
-          font-weight: 900;
-          text-align: center;
-          word-wrap: break-word;
-          font-size: 40px;
-          margin: 0;
-          padding: 0;
-        }
-        p {
-          font-size: 15px;
-          font-weight: 400;
-          line-height: 25px;
-          color: #8f9093;
-          font-family: "Open Sans";
-          text-align: center;
-        }
+      h3{
+        color: #424242;
+        font-family: "Nunito", sans-serif;
+        font-weight: 900;
+        text-align: center;;
       }
     }
     .two {
       width: 50%;
-    }
-  }
-}
-footer {
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    div {
-        width: 33%;
-      h5 {
-        color: #4a4a4a;
-        font-weight: 900;
-        font-family: "Nunito", sans-serif;
-        font-size: 24px;
-        margin: 0;
-      }
-      ul {
-        padding: 0px;
-        li {
-          list-style: none;
-          p {
-            color: #8f9093;
-            text-align: left;
-            font-family: "Open Sans";
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 25px;
-            margin: 34px 0px 0px;
-          }
-          a {
-            color: #8f9093;
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 25px;
-            font-family: "Open Sans";
-            &:hover {
-              color: $color-primary;
-            }
-          }
-        }
-      }
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        a {
-          width: 150px;
-          height: 150px;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          &:nth-of-type(1) {
-            background-image: url("https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2001&q=80");
-          }
-          &:nth-of-type(2) {
-            background-image: url("https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
-          }
-          &:nth-of-type(3) {
-            background-image: url("https://images.unsplash.com/photo-1536612125961-dca53f20363d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
-          }
-          &:nth-of-type(4) {
-            background-image: url("https://images.unsplash.com/photo-1586326709898-0a344840a314?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
-          }
-          &:nth-of-type(5) {
-            background-image: url("https://images.unsplash.com/photo-1518794183325-56eed2af11fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80");
-          }
-          &:nth-of-type(6) {
-            background-image: url("https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80");
-          }
-        }
-      }
     }
   }
 }

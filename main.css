@@ -1,29 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 .container {
   max-width: 90%;
   margin: 0 auto;
-}
-
-.top-bar {
-  background-color: rgba(255, 255, 255, 0.3);
-  position: relative;
-  width: 100%;
-  height: 35px;
-  font-size: 13px;
-  line-height: 1;
-  z-index: 110;
-}
-
-.top-bar .container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 nav {
@@ -37,7 +16,50 @@ nav {
   padding-bottom: 1rem;
 }
 
-nav .container {
+nav .top-bar {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 35px;
+  font-size: 13px;
+  line-height: 1;
+  z-index: 110;
+}
+
+nav .top-bar .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .top-bar .container ul li {
+  list-style: none;
+}
+
+nav .top-bar .container ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: "Nunito", sans-serif;
+}
+
+nav .top-bar .container ul li:nth-of-type(1) {
+  padding-right: 1rem;
+}
+
+nav .bottom-bar {
+  padding-top: 2rem;
+}
+
+nav .bottom-bar .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,10 +69,13 @@ nav .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+nav .bottom-bar .container ul {
   width: 100%;
 }
 
-nav .container ul:nth-of-type(2) {
+nav .bottom-bar .container ul:nth-of-type(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,45 +86,34 @@ nav .container ul:nth-of-type(2) {
           justify-content: center;
 }
 
-nav .container ul:nth-of-type(2) li {
+nav .bottom-bar .container ul:nth-of-type(2) li {
   padding-right: 3rem;
 }
 
-nav .container ul:nth-of-type(2) li:last-of-type() {
+nav .bottom-bar .container ul:nth-of-type(2) li:last-of-type() {
   padding-right: none;
 }
 
-nav .container ul li {
+nav .bottom-bar .container ul li {
   list-style: none;
 }
 
-nav .container ul li a {
+nav .bottom-bar .container ul li a {
   text-decoration: none;
   color: white;
   font-size: 18px;
   font-weight: bold;
+  font-family: "Nunito", sans-serif;
 }
 
 header {
-  background-image: url("https://previews.123rf.com/images/artistrobd/artistrobd1407/artistrobd140700079/29843086-perro-corriendo-en-la-playa-al-atardecer.jpg");
+  background-image: url("https://pawfriends.qodeinteractive.com/wp-content/uploads/2019/08/h1-rev-img-1.jpg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
   position: relative;
-  z-index: 0;
-}
-
-header::afer {
-  content: "";
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.3);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 header .container {
@@ -117,7 +131,6 @@ header .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 2;
 }
 
 header .container h1 {
@@ -126,7 +139,7 @@ header .container h1 {
   text-align: left;
   line-height: 75px;
   letter-spacing: 0px;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 70px;
   border-color: #8f9093;
   border-style: none;
@@ -136,6 +149,7 @@ header .container h1 {
   white-space: normal;
   width: 645px;
   height: auto;
+  font-family: "Nunito", sans-serif;
 }
 
 header .container p {
@@ -157,20 +171,98 @@ header .container p {
   height: auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 header .container a {
-  color: #f04336;
-  background-color: #ffffff;
+  color: white;
+  background-color: #f04336;
   border-color: #ffffff;
   padding: 15px 66px;
   text-decoration: none;
   font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  border: 1px solid transparent;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+section:nth-of-type(1) .container .title h2 {
+  font-size: 50px;
+  line-height: 1.1em;
+  text-align: center;
+  color: #424242;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  padding-top: 2rem;
+  padding-bottom: 1.3rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+}
+
+section:nth-of-type(1) .container .title p {
+  color: #8f9093;
+  font-size: 19px;
+  line-height: 32px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+section:nth-of-type(1) .container .grid {
+  padding-top: 2rem;
+  height: 500px;
+  position: relative;
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  -ms-grid-rows: minmax(auto, auto);
+      grid-template-rows: minmax(auto, auto);
+  margin: 0 auto;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+
+section:nth-of-type(1) .container .grid__container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 6px;
+}
+
+section:nth-of-type(1) .container .grid__container:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 4;
+  background-image: url("https://images.unsplash.com/photo-1504826260979-242151ee45b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+  background-position: bottom;
+}
+
+section:nth-of-type(1) .container .grid__container:nth-child(2) {
+  grid-column: span 2;
+  grid-row: span 4;
+  background-image: url("https://images.unsplash.com/photo-1574231164645-d6f0e8553590?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1035&q=80");
+}
+
+section:nth-of-type(1) .container .grid__container:nth-child(3) {
+  grid-column: span 2;
+  grid-row: span 4;
+  background-image: url("https://images.unsplash.com/photo-1529040274442-815019b0e4fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80");
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Nunito", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

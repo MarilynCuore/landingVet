@@ -174,7 +174,7 @@ section {
         }
       }
       .grid {
-        padding-top: 2rem;
+          padding-top: 2rem;
         height: 500px;
         position: relative;
         max-width: 100%;
@@ -194,7 +194,6 @@ section {
           text-align: center;
           color: white;
           transition: 0.5s;
-          border-radius: 6px;
           &:nth-child(1) {
             grid-column: span 2;
             grid-row: span 4;

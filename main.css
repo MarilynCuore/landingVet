@@ -10,6 +10,14 @@
   border-bottom: solid 0.5px #adadad;
 }
 
+.active .top-bar {
+  display: none;
+}
+
+.active .bottom-bar {
+  padding-top: 0 !important;
+}
+
 .active ul li a {
   color: #adadad !important;
 }
@@ -46,7 +54,7 @@ nav .top-bar .container ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 0px;
+  margin: 0px !important;
 }
 
 nav .top-bar .container ul li {
@@ -83,6 +91,7 @@ nav .bottom-bar .container {
 
 nav .bottom-bar .container ul {
   width: 100%;
+  margin: 0;
 }
 
 nav .bottom-bar .container ul:nth-of-type(2) {
@@ -307,6 +316,11 @@ section:nth-of-type(1) .container .grid__container .title strong a {
   cursor: pointer;
 }
 
+section:nth-of-type(1) .container .grid__container .title strong:hover + span {
+  background-color: #f04336;
+  color: white;
+}
+
 section:nth-of-type(1) .container .grid__container .title span {
   z-index: 1;
   background: white;
@@ -318,6 +332,8 @@ section:nth-of-type(1) .container .grid__container .title span {
   font-family: "Nunito", sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 section:nth-of-type(1) .container .grid__container .title span:hover {
@@ -468,14 +484,23 @@ footer .container div .grid {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 250px;
 }
 
 footer .container div .grid a {
-  width: 150px;
-  height: 150px;
+  width: calc(33% - 2px);
+  height: 85px;
+  margin: 1px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+footer .container div .grid a:hover {
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+  -webkit-transform: scale(0.9) rotate(10deg);
+          transform: scale(0.9) rotate(10deg);
 }
 
 footer .container div .grid a:nth-of-type(1) {

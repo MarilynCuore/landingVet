@@ -6,8 +6,12 @@ $color-primary: #f04336;
   margin: 0 auto;
 }
 .active {
+  .top-bar { display: none;}
   background-color: white !important;
   border-bottom: solid 0.5px #adadad;
+  .bottom-bar {
+    padding-top: 0 !important;
+  } 
   ul {
     li {
       a {
@@ -40,7 +44,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        margin: 0px;
+        margin: 0px !important;
         li {
           list-style: none;
           a {
@@ -65,6 +69,7 @@ nav {
       justify-content: space-between;
       ul {
         width: 100%;
+        margin: 0;
         &:nth-of-type(2) {
           display: flex;
           align-self: center;
@@ -244,6 +249,12 @@ section {
                 text-decoration: none;
                 cursor: pointer;
               }
+              &:hover {
+                & + span {
+                  background-color: $color-primary;
+                  color: white;
+                }
+              }
             }
             span {
               z-index: 1;
@@ -255,6 +266,7 @@ section {
               font-family: "Nunito", sans-serif;
               font-size: 1.3rem;
               font-weight: bold;
+              transition: all .5s ease;
               &:hover {
                 background: $color-primary;
                 color: white;
@@ -365,12 +377,18 @@ footer {
         align-items: center;
         justify-content: flex-start;
         flex-wrap: wrap;
+        width: 250px;
         a {
-          width: 150px;
-          height: 150px;
+          width: calc(33% - 2px);
+          height: 85px;
+          margin: 1px;
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
+          &:hover {
+            transition: all .1s ease;
+            transform: scale(0.9) rotate(10deg);
+          }
           &:nth-of-type(1) {
             background-image: url("https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2001&q=80");
           }

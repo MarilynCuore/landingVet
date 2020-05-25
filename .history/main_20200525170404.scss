@@ -25,9 +25,9 @@ $color-primary: #f04336;
 .active {
   .top-bar { display: none;}
   background-color: white !important;
+  border-bottom: none !important;
   .bottom-bar {
     padding-top: 0 !important;
-    border-bottom: none !important;
   } 
   ul {
     li {
@@ -352,16 +352,6 @@ section {
           font-family: "Open Sans";
           text-align: center;
         }
-        a{
-            font-size: 15px;
-            font-weight: bold;
-            line-height: 25px;
-            color: $color-primary;
-            font-family: "Open Sans";
-            text-align: center !important;
-            text-decoration: none;
-
-        }
       }
     }
     .two {
@@ -416,7 +406,7 @@ footer {
         align-items: center;
         justify-content: flex-start;
         flex-wrap: wrap;
-        width: 100%;
+        width: 250px;
         padding-top: 1rem;
         a {
           width: calc(33% - 2px);

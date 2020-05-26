@@ -23,6 +23,7 @@ $color-primary: #f04336;
     z-index: 999999999999;
 }
 .active {
+  z-index: 10000;
   .top-bar { display: none;}
   background-color: white !important;
   .bottom-bar {
@@ -39,6 +40,7 @@ $color-primary: #f04336;
 }
 
 nav {
+  &.active { padding: 0;}
   background: transparent;
   position: fixed;
   left: 0;

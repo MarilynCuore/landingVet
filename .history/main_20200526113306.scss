@@ -212,10 +212,10 @@ header {
       text-align: center;
       span {
         z-index: 1;
-        background: $color-primary;
+        background: white;
         padding: 5px 15px;
-        color: white;
-        font-size: 22px;
+        color: $color-primary;
+        font-size: 18px;
         clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
         font-family: "Nunito", sans-serif;
         font-size: 1.3rem;

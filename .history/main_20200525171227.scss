@@ -99,7 +99,7 @@ nav {
           li {
             padding-right: 3rem;
             &:last-child {
-              padding-right: 0px !important;
+              padding-right: none !important;
             }
           }
         }
@@ -348,7 +348,6 @@ section {
         }
         div {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             p {
@@ -365,7 +364,9 @@ section {
                   line-height: 25px;
                   color: $color-primary;
                   font-family: "Open Sans";
+                  text-align: center !important;
                   text-decoration: none;
+      
               }
         }
      
@@ -373,9 +374,6 @@ section {
     }
     .two {
       width: 50%;
-      iframe{
-          display: block;
-      }
     }
   }
 }
@@ -384,8 +382,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     div {
       width: 33%;
       h5 {

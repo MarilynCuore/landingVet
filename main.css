@@ -137,7 +137,7 @@ nav .bottom-bar .container ul:nth-of-type(2) li {
 }
 
 nav .bottom-bar .container ul:nth-of-type(2) li:last-child {
-  padding-right: none !important;
+  padding-right: 0px !important;
 }
 
 nav .bottom-bar .container ul li {
@@ -440,7 +440,23 @@ section:nth-of-type(2) .one .content h3 {
   padding: 0;
 }
 
-section:nth-of-type(2) .one .content p {
+section:nth-of-type(2) .one .content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section:nth-of-type(2) .one .content div p {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
@@ -449,18 +465,21 @@ section:nth-of-type(2) .one .content p {
   text-align: center;
 }
 
-section:nth-of-type(2) .one .content a {
+section:nth-of-type(2) .one .content div a {
   font-size: 15px;
   font-weight: bold;
   line-height: 25px;
   color: #f04336;
   font-family: "Open Sans";
-  text-align: center !important;
   text-decoration: none;
 }
 
 section:nth-of-type(2) .two {
   width: 50%;
+}
+
+section:nth-of-type(2) .two iframe {
+  display: block;
 }
 
 footer .container {
@@ -473,8 +492,8 @@ footer .container {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 footer .container div {

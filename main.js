@@ -13,7 +13,7 @@ window.onload = () => {
     })
 
     var options = {
-        loop: true,
+        loop: false,
         // If we need pagination
         pagination: {
         el: '.swiper-pagination',

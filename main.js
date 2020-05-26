@@ -3,7 +3,7 @@ window.onload = () => {
        
         const scroll = window.scrollY;
         const logo = document.querySelector('img.logo')
-        if(scroll > 100) {
+        if(scroll > 150) {
             document.querySelector('nav').classList.add("active")
             logo.src = "./assets/red.png"
         }else {

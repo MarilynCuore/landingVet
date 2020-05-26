@@ -248,7 +248,44 @@ header .container a {
 }
 
 .swiper-container .swiper-slide {
-  height: 300px;
+  font-family: "Nunito", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-color: #3e3e3e;
+  background-blend-mode: hard-light;
+}
+
+.swiper-container .swiper-slide h1 {
+  font-size: 40px;
+  width: 80%;
+  text-align: center;
+}
+
+.swiper-container .swiper-slide h1 small {
+  font-size: 16px;
+}
+
+.swiper-container .swiper-slide:nth-child(1) {
+  background-image: url(https://images.unsplash.com/photo-1508814389023-fe39a089973a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+}
+
+.swiper-container .swiper-slide:nth-child(2) {
+  background-image: url(https://images.unsplash.com/photo-1580597095981-8d21aa8cdfed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80);
+}
+
+.swiper-container .swiper-slide:nth-child(3) {
+  background-image: url(https://images.unsplash.com/photo-1453227588063-bb302b62f50b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
 }
 
 section:nth-of-type(1) {

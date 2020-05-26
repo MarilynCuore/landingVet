@@ -211,6 +211,8 @@ header {
       width: 80%;
       text-align: center;
       span {
+        transform: translateY(-6px);
+        display: inline-block;
         z-index: 1;
         background: $color-primary;
         padding: 5px 15px;

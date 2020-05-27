@@ -102,7 +102,6 @@ nav {
       ul {
         width: 100%;
         margin: 0;
-        padding-left: 0px;
         &:nth-of-type(2) {
           display: flex;
           align-self: center;
@@ -534,9 +533,6 @@ body {
     }
   }
   section{
-    &:nth-of-type(1){
-      display: flex;
-    }
     &:nth-of-type(2){
       flex-direction: column;
       .one{

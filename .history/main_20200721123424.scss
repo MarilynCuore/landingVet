@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 $color-primary: #f04336;
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --swiper-theme-color: #bbf243 !important;
 }
@@ -250,6 +253,42 @@ header {
 }
 section {
   &:nth-of-type(1) {
+    width: 100%;
+    height: 300px;
+    background-image: url("./assets/background-red.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      h3 {
+        font-size: 1.7rem;
+        color: white;
+        text-align: center;
+        margin: 0;
+        font-family: "Nunito", sans-serif;
+      }
+      span {
+        transform: translateY(-6px);
+        display: inline-block;
+        z-index: 1;
+        background: #bbf243;
+        padding: 5px 15px;
+        color: white;
+        font-size: 22px;
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+        font-family: "Nunito", sans-serif;
+        font-size: 1.3rem;
+        font-weight: bold;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+  &:nth-of-type(2) {
     padding-bottom: 3.5rem;
     .container {
       .title {
@@ -376,7 +415,7 @@ section {
       }
     }
   }
-  &:nth-of-type(2) {
+  &:nth-of-type(3) {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -493,22 +532,22 @@ footer {
             transform: scale(0.9) rotate(10deg);
           }
           &:nth-of-type(1) {
-            background-image: url("https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2001&q=80");
+            background-image: url("https://res.cloudinary.com/dd0wutwfh/image/upload/v1595325671/107462101_133376031732519_1623992326608951265_o.png");
           }
           &:nth-of-type(2) {
-            background-image: url("https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+            background-image: url("https://res.cloudinary.com/dd0wutwfh/image/upload/v1595325658/107421367_133375298399259_9136054476171438338_o.jpg");
           }
           &:nth-of-type(3) {
-            background-image: url("https://images.unsplash.com/photo-1536612125961-dca53f20363d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+            background-image: url("https://res.cloudinary.com/dd0wutwfh/image/upload/v1595325646/107376474_133226245080831_4854813441496221981_o.jpg");
           }
           &:nth-of-type(4) {
-            background-image: url("https://images.unsplash.com/photo-1586326709898-0a344840a314?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+            background-image: url("https://res.cloudinary.com/dd0wutwfh/image/upload/v1595325814/107104027_132430518493737_8507576706714740991_o.jpg");
           }
           &:nth-of-type(5) {
-            background-image: url("https://images.unsplash.com/photo-1518794183325-56eed2af11fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80");
+            background-image: url("https://res.cloudinary.com/dd0wutwfh/image/upload/v1595325850/107055202_130981615305294_6872518535325248560_o.png");
           }
           &:nth-of-type(6) {
-            background-image: url("https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80");
+            background-image: url("https://res.cloudinary.com/dd0wutwfh/image/upload/v1595326086/106582161_130980165305439_4828319078423767098_o.jpg");
           }
         }
       }
@@ -564,6 +603,20 @@ body {
   footer {
     .container {
       flex-direction: column;
+      .links {
+        ul {
+          li {
+            &:nth-of-type(3) {
+              a {
+                color: $color-primary;
+                &:hover {
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
       div {
         width: 100% !important;
         ul {

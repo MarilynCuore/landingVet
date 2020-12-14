@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 html {
   scroll-behavior: smooth;
@@ -18,12 +18,12 @@ html {
   right: 0;
   top: 50%;
   color: white;
-  background-color: #FF6663;
+  background-color: #ff6663;
   border-color: #ffffff;
   padding: 5px;
   text-decoration: none;
   font-weight: bold;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Paytone One", sans-serif;
   border: 1px solid transparent;
   overflow: hidden;
   border-radius: 4px;
@@ -104,7 +104,7 @@ nav .top-bar .container ul li a {
   color: white;
   font-size: 13px;
   font-weight: normal;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Paytone One", sans-serif;
 }
 
 nav .top-bar .container ul li a:hover {
@@ -165,7 +165,7 @@ nav .bottom-bar .container ul li a {
   color: white;
   font-size: 18px;
   font-weight: bold;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Paytone One", sans-serif;
 }
 
 nav .bottom-bar .container ul li a img {
@@ -211,7 +211,7 @@ header .container h1 {
   line-height: 75px;
   letter-spacing: 0px;
   font-weight: 900;
-  font-size: 60px;
+  font-size: 53px;
   border-color: #8f9093;
   border-style: none;
   margin: 0px;
@@ -220,7 +220,7 @@ header .container h1 {
   white-space: normal;
   width: 645px;
   height: auto;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Paytone One", sans-serif;
 }
 
 header .container p {
@@ -252,14 +252,14 @@ header .container a {
   padding: 15px 66px;
   text-decoration: none;
   font-weight: bold;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Paytone One", sans-serif;
   border: 1px solid transparent;
   overflow: hidden;
   border-radius: 4px;
 }
 
 .swiper-container .swiper-slide {
-  font-family: "Architects Daughter", cursive;
+  font-family: "Paytone One", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,7 +294,7 @@ header .container a {
   font-size: 22px;
   -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
           clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
-  font-family: "Architects Daughter", cursive;
+  font-family: "Paytone One", sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
   -webkit-transition: all 0.5s ease;
@@ -331,7 +331,7 @@ section:nth-of-type(1) .container .title h2 {
   padding: 0;
   padding-top: 2rem;
   padding-bottom: 1.3rem;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Paytone One", sans-serif;
   font-weight: 900;
 }
 
@@ -424,7 +424,7 @@ section:nth-of-type(1) .container .grid__container .title strong {
   padding: 5px 10px;
   background: white;
   color: white;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Paytone One", sans-serif;
 }
 
 section:nth-of-type(1) .container .grid__container .title strong a {
@@ -446,7 +446,7 @@ section:nth-of-type(1) .container .grid__container .title span {
   font-size: 18px;
   -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
           clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
-  font-family: "Architects Daughter", cursive;
+  font-family: "Paytone One", sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
   -webkit-transition: all 0.5s ease;
@@ -504,7 +504,7 @@ section:nth-of-type(2) .one .content {
 
 section:nth-of-type(2) .one .content h3 {
   color: #424242;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Paytone One", sans-serif;
   font-weight: 900;
   text-align: center;
   word-wrap: break-word;
@@ -576,7 +576,7 @@ footer .container div {
 footer .container div h5 {
   color: #4a4a4a;
   font-weight: 900;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Paytone One", sans-serif;
   font-size: 24px;
   margin: 0;
 }

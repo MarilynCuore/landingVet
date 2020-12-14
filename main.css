@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --swiper-theme-color: #bbf243 !important;
 }
@@ -314,10 +318,62 @@ header .container a {
 }
 
 section:nth-of-type(1) {
+  width: 100%;
+  height: 300px;
+  background-image: url("./assets/background-red.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section:nth-of-type(1) .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+section:nth-of-type(1) .container h3 {
+  font-size: 1.7rem;
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+section:nth-of-type(1) .container span {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+  display: inline-block;
+  z-index: 1;
+  background: #bbf243;
+  padding: 5px 15px;
+  color: white;
+  font-size: 22px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+          clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  font-family: "Nunito", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section:nth-of-type(2) {
   padding-bottom: 3.5rem;
 }
 
-section:nth-of-type(1) .container .title h2 {
+section:nth-of-type(2) .container .title h2 {
   font-size: 50px;
   line-height: 1.1em;
   text-align: center;
@@ -331,7 +387,7 @@ section:nth-of-type(1) .container .title h2 {
   font-weight: 900;
 }
 
-section:nth-of-type(1) .container .title p {
+section:nth-of-type(2) .container .title p {
   color: #8f9093;
   font-size: 19px;
   line-height: 32px;
@@ -341,7 +397,7 @@ section:nth-of-type(1) .container .title p {
   font-family: "Open Sans", sans-serif;
 }
 
-section:nth-of-type(1) .container .grid {
+section:nth-of-type(2) .container .grid {
   padding-top: 2rem;
   height: 500px;
   position: relative;
@@ -352,7 +408,7 @@ section:nth-of-type(1) .container .grid {
   display: flex;
 }
 
-section:nth-of-type(1) .container .grid__container {
+section:nth-of-type(2) .container .grid__container {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -378,13 +434,13 @@ section:nth-of-type(1) .container .grid__container {
   transition: 0.5s;
 }
 
-section:nth-of-type(1) .container .grid__container:hover {
+section:nth-of-type(2) .container .grid__container:hover {
   -webkit-box-flex: 2;
       -ms-flex: 2 1 auto;
           flex: 2 1 auto;
 }
 
-section:nth-of-type(1) .container .grid__container .title {
+section:nth-of-type(2) .container .grid__container .title {
   margin-bottom: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,7 +453,7 @@ section:nth-of-type(1) .container .grid__container .title {
   cursor: pointer;
 }
 
-section:nth-of-type(1) .container .grid__container .title:hover strong {
+section:nth-of-type(2) .container .grid__container .title:hover strong {
   top: -35px;
   opacity: 1;
   color: black;
@@ -406,7 +462,7 @@ section:nth-of-type(1) .container .grid__container .title:hover strong {
           transform: scale(1);
 }
 
-section:nth-of-type(1) .container .grid__container .title strong {
+section:nth-of-type(2) .container .grid__container .title strong {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   overflow: hidden;
@@ -423,18 +479,18 @@ section:nth-of-type(1) .container .grid__container .title strong {
   font-family: "Nunito", sans-serif;
 }
 
-section:nth-of-type(1) .container .grid__container .title strong a {
+section:nth-of-type(2) .container .grid__container .title strong a {
   color: #f04336;
   text-decoration: none;
   cursor: pointer;
 }
 
-section:nth-of-type(1) .container .grid__container .title strong:hover + span {
+section:nth-of-type(2) .container .grid__container .title strong:hover + span {
   background-color: #f04336;
   color: white;
 }
 
-section:nth-of-type(1) .container .grid__container .title span {
+section:nth-of-type(2) .container .grid__container .title span {
   z-index: 1;
   background: white;
   padding: 5px 15px;
@@ -449,28 +505,28 @@ section:nth-of-type(1) .container .grid__container .title span {
   transition: all 0.5s ease;
 }
 
-section:nth-of-type(1) .container .grid__container .title span:hover {
+section:nth-of-type(2) .container .grid__container .title span:hover {
   background: #f04336;
   color: white;
 }
 
-section:nth-of-type(1) .container .grid__container:nth-child(1) {
+section:nth-of-type(2) .container .grid__container:nth-child(1) {
   margin-right: 10px;
   background-image: url("https://images.unsplash.com/photo-1504826260979-242151ee45b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
   background-position: bottom;
 }
 
-section:nth-of-type(1) .container .grid__container:nth-child(2) {
+section:nth-of-type(2) .container .grid__container:nth-child(2) {
   margin-right: 10px;
   background-image: url("https://images.unsplash.com/photo-1574231164645-d6f0e8553590?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1035&q=80");
 }
 
-section:nth-of-type(1) .container .grid__container:nth-child(3) {
+section:nth-of-type(2) .container .grid__container:nth-child(3) {
   margin-right: 10px;
   background-image: url("https://images.unsplash.com/photo-1529040274442-815019b0e4fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80");
 }
 
-section:nth-of-type(2) {
+section:nth-of-type(3) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,12 +537,12 @@ section:nth-of-type(2) {
   width: 100%;
 }
 
-section:nth-of-type(2) .one {
+section:nth-of-type(3) .one {
   width: 50%;
   background-color: #ededed;
 }
 
-section:nth-of-type(2) .one .content {
+section:nth-of-type(3) .one .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -503,7 +559,7 @@ section:nth-of-type(2) .one .content {
   height: 100%;
 }
 
-section:nth-of-type(2) .one .content h3 {
+section:nth-of-type(3) .one .content h3 {
   color: #424242;
   font-family: "Nunito", sans-serif;
   font-weight: 900;
@@ -514,7 +570,7 @@ section:nth-of-type(2) .one .content h3 {
   padding: 0;
 }
 
-section:nth-of-type(2) .one .content div {
+section:nth-of-type(3) .one .content div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,7 +586,7 @@ section:nth-of-type(2) .one .content div {
           align-items: center;
 }
 
-section:nth-of-type(2) .one .content div p {
+section:nth-of-type(3) .one .content div p {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
@@ -539,7 +595,7 @@ section:nth-of-type(2) .one .content div p {
   text-align: center;
 }
 
-section:nth-of-type(2) .one .content div a {
+section:nth-of-type(3) .one .content div a {
   font-size: 15px;
   font-weight: bold;
   line-height: 25px;
@@ -548,11 +604,11 @@ section:nth-of-type(2) .one .content div a {
   text-decoration: none;
 }
 
-section:nth-of-type(2) .two {
+section:nth-of-type(3) .two {
   width: 50%;
 }
 
-section:nth-of-type(2) .two iframe {
+section:nth-of-type(3) .two iframe {
   display: block;
 }
 

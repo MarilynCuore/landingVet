@@ -5,10 +5,10 @@ window.onload = () => {
         const logo = document.querySelector('img.logo')
         if(scroll > 150) {
             document.querySelector('nav').classList.add("active")
-            logo.src = "./assets/blue.png"
+            logo.src = "./assets/red.png"
         }else {
             document.querySelector('nav').classList.remove('active')
-            logo.src = "./assets/blue.png"
+            logo.src = "./assets/white.png"
         }
     })
 

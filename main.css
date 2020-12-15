@@ -47,6 +47,7 @@ html {
 
 .active ul li a {
   color: #adadad !important;
+  font-weight: 100 !important;
 }
 
 nav {
@@ -103,7 +104,7 @@ nav .top-bar .container ul li a {
   text-decoration: none;
   color: white;
   font-size: 13px;
-  font-weight: normal;
+  font-weight: 100 !important;
   font-family: "Paytone One", sans-serif;
 }
 
@@ -164,7 +165,7 @@ nav .bottom-bar .container ul li a {
   text-decoration: none;
   color: white;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 100 !important;
   font-family: "Paytone One", sans-serif;
 }
 
@@ -251,7 +252,7 @@ header .container a {
   border-color: #ffffff;
   padding: 15px 66px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 100 !important;
   font-family: "Paytone One", sans-serif;
   border: 1px solid transparent;
   overflow: hidden;
@@ -306,7 +307,7 @@ header .container a {
 }
 
 .swiper-container .swiper-slide:nth-child(1) {
-  background-image: url("https://images.unsplash.com/photo-1554149944-5ca79e771636?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-image: url("https://salupro-cdn.s3.eu-west-3.amazonaws.com/male-cynologist-cop-dog-training-outdoor-owner-with-his-obedient-pet-outside-bloodhound-domestic-animal.jpg");
 }
 
 .swiper-container .swiper-slide:nth-child(2) {
@@ -336,13 +337,18 @@ section:nth-of-type(1) .container .title h2 {
 }
 
 section:nth-of-type(1) .container .title p {
-  color: #8f9093;
+  color: #a3a3a3;
+  font-weight: bold;
   font-size: 19px;
   line-height: 32px;
   text-align: center;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+}
+
+section:nth-of-type(1) .container .title span:nth-of-type(1) {
+  margin-bottom: 10px;
 }
 
 section:nth-of-type(1) .container .grid {
@@ -380,6 +386,7 @@ section:nth-of-type(1) .container .grid__container {
           flex: 1 1 auto;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  position: relative;
 }
 
 section:nth-of-type(1) .container .grid__container:hover {
@@ -388,11 +395,44 @@ section:nth-of-type(1) .container .grid__container:hover {
           flex: 2 1 auto;
 }
 
+section:nth-of-type(1) .container .grid__container:hover .info {
+  opacity: 1;
+}
+
+section:nth-of-type(1) .container .grid__container:hover .title span:nth-of-type(1) {
+  background-color: #ff6663;
+  color: white;
+}
+
+section:nth-of-type(1) .container .grid__container .info {
+  width: 70%;
+  left: 50%;
+  position: absolute;
+  top: 42%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  color: #080978;
+  font-family: "Open Sans";
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+  font-size: 16px;
+}
+
 section:nth-of-type(1) .container .grid__container .title {
   margin-bottom: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -453,6 +493,15 @@ section:nth-of-type(1) .container .grid__container .title span {
   transition: all 0.5s ease;
 }
 
+section:nth-of-type(1) .container .grid__container .title span:nth-of-type(1) {
+  color: #ff6663;
+}
+
+section:nth-of-type(1) .container .grid__container .title span:nth-of-type(2) {
+  font-weight: 100 !important;
+  font-size: 16px;
+}
+
 section:nth-of-type(1) .container .grid__container .title span:hover {
   background: #080978;
   color: white;
@@ -460,13 +509,13 @@ section:nth-of-type(1) .container .grid__container .title span:hover {
 
 section:nth-of-type(1) .container .grid__container:nth-child(1) {
   margin-right: 10px;
-  background-image: url("https://images.unsplash.com/photo-1601758174609-3a789c37dfa8?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+  background-image: url("https://salupro-cdn.s3.eu-west-3.amazonaws.com/male-cynologist-work-with-trained-police-dog-training-outdoor-owner-with-his-obedient-pet-outside-bloodhound-domestic-animal.jpg");
   background-position: center;
 }
 
 section:nth-of-type(1) .container .grid__container:nth-child(2) {
   margin-right: 10px;
-  background-image: url("https://images.unsplash.com/photo-1581887936036-3f4f7f0b6679?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=998&q=80");
+  background-image: url("https://salupro-cdn.s3.eu-west-3.amazonaws.com/female-groomer-haircut-yorkshire-terrier-on-the-table-for-grooming.jpg");
 }
 
 section:nth-of-type(2) {
@@ -482,7 +531,7 @@ section:nth-of-type(2) {
 
 section:nth-of-type(2) .one {
   width: 50%;
-  background-color: #ededed;
+  background-color: #63adf2;
 }
 
 section:nth-of-type(2) .one .content {
@@ -503,7 +552,7 @@ section:nth-of-type(2) .one .content {
 }
 
 section:nth-of-type(2) .one .content h3 {
-  color: #424242;
+  color: white;
   font-family: "Paytone One", sans-serif;
   font-weight: 900;
   text-align: center;
@@ -533,7 +582,7 @@ section:nth-of-type(2) .one .content div p {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
-  color: #8f9093;
+  color: white;
   font-family: "Open Sans";
   text-align: center;
 }
@@ -645,27 +694,27 @@ footer .container div .grid a:hover {
 }
 
 footer .container div .grid a:nth-of-type(1) {
-  background-image: url("https://res.cloudinary.com/dd0wutwfh/image/upload/v1595325671/107462101_133376031732519_1623992326608951265_o.png");
+  background-image: url("https://salupro-cdn.s3.eu-west-3.amazonaws.com/124113863_280185260008993_5034371682314916075_n.jpg");
 }
 
 footer .container div .grid a:nth-of-type(2) {
-  background-image: url("https://res.cloudinary.com/dd0wutwfh/image/upload/v1595325658/107421367_133375298399259_9136054476171438338_o.jpg");
+  background-image: url("https://salupro-cdn.s3.eu-west-3.amazonaws.com/125903330_384794299523887_4333849012597817732_n.jpg");
 }
 
 footer .container div .grid a:nth-of-type(3) {
-  background-image: url("https://res.cloudinary.com/dd0wutwfh/image/upload/v1595325646/107376474_133226245080831_4854813441496221981_o.jpg");
+  background-image: url("https://salupro-cdn.s3.eu-west-3.amazonaws.com/125903906_367588660978670_757038341069663980_n.jpg");
 }
 
 footer .container div .grid a:nth-of-type(4) {
-  background-image: url("https://res.cloudinary.com/dd0wutwfh/image/upload/v1595325814/107104027_132430518493737_8507576706714740991_o.jpg");
+  background-image: url("https://salupro-cdn.s3.eu-west-3.amazonaws.com/130245685_1141961509535480_8576974919597391627_n.jpg");
 }
 
 footer .container div .grid a:nth-of-type(5) {
-  background-image: url("https://res.cloudinary.com/dd0wutwfh/image/upload/v1595325850/107055202_130981615305294_6872518535325248560_o.png");
+  background-image: url("https://salupro-cdn.s3.eu-west-3.amazonaws.com/130582816_212389813721198_4385842887100218971_n.jpg");
 }
 
 footer .container div .grid a:nth-of-type(6) {
-  background-image: url("https://res.cloudinary.com/dd0wutwfh/image/upload/v1595326086/106582161_130980165305439_4828319078423767098_o.jpg");
+  background-image: url("https://salupro-cdn.s3.eu-west-3.amazonaws.com/130909536_692675521448817_7429468652631943725_n.jpg");
 }
 
 body {

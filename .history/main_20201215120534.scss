@@ -258,6 +258,7 @@ section {
     padding-bottom: 3.5rem;
     .container {
       .title {
+       
         h2 {
           font-size: 50px;
           line-height: 1.1em;
@@ -272,7 +273,7 @@ section {
           font-weight: 900;
         }
         p {
-          color: #a3a3a3;
+          color: #dedede;
           font-weight: bold;
           font-size: 19px;
           line-height: 32px;
@@ -281,8 +282,8 @@ section {
           padding: 0;
           font-family: "Open Sans", sans-serif;
         }
-        span {
-          &:nth-of-type(1) {
+        span{
+          &:nth-of-type(1){
             margin-bottom: 10px;
           }
         }
@@ -317,7 +318,7 @@ section {
             }
             .title span {
               &:nth-of-type(1) {
-                background-color: #ff6663;
+                background-color: $color-primary;
                 color: white;
               }
             }
@@ -326,7 +327,7 @@ section {
             width: 70%;
             left: 50%;
             position: absolute;
-            top: 42%;
+            top:47%;
             transform: translate(-50%, -60%);
             background: rgba(white, 0.7);
             padding: 20px;
@@ -339,9 +340,9 @@ section {
           .title {
             margin-bottom: 2em;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
             width: 100%;
             position: relative;
             cursor: pointer;
@@ -390,13 +391,6 @@ section {
               font-size: 1.3rem;
               font-weight: bold;
               transition: all 0.5s ease;
-              &:nth-of-type(1){
-                color: #ff6663;
-              }
-              &:nth-of-type(2){
-                font-weight: 100 !important;
-                font-size: 16px;
-              }
               &:hover {
                 background: $color-primary;
                 color: white;
